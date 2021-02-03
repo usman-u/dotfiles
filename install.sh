@@ -10,7 +10,9 @@ sudo apt upgrade -y --allow-downgrades
 # extras
 sudo apt install figlet
 sudo apt install lolcat
-
+sudo apt install vim 
+sudo apt install htop
+sudo apt install tmux
 # symlinks
 
 dotfilesDir=$(pwd)

@@ -7,23 +7,36 @@ echo "Installing Updates n Stuff..."
 sudo apt update 
 sudo apt upgrade -y --allow-downgrades
 
+# subroutine for installing
+function install {
+  which $1 &> /dev/null
+
+  if [ $? -ne 0 ]; then
+    echo "Installing: ${1}..."
+    sudo apt install -y $1
+  else
+    echo "Already installed: ${1}"
+  fi
+}
+
+
 # main things
-sudo apt install vim 
-sudo apt install htop
-sudo apt install tmux
-sudo apt install nmap
-sudo apt install curl
-sudo apt install git
+install vim 
+install htop
+install tmux
+install nmap
+install curl
+install git
 
 
-# extras
-sudo apt install figlet
-sudo apt install lolcat
+# extra things
+install figlet
+install lolcat
 
 
 
 
-# symlinks
+# subroutine for symlinks
 dotfilesDir=$(pwd)
 
 function linkDotfile {

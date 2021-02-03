@@ -7,14 +7,23 @@ echo "Installing Updates n Stuff..."
 sudo apt update 
 sudo apt upgrade -y --allow-downgrades
 
-# extras
-sudo apt install figlet
-sudo apt install lolcat
+# main things
 sudo apt install vim 
 sudo apt install htop
 sudo apt install tmux
-# symlinks
+sudo apt install nmap
+sudo apt install curl
+sudo apt install git
 
+
+# extras
+sudo apt install figlet
+sudo apt install lolcat
+
+
+
+
+# symlinks
 dotfilesDir=$(pwd)
 
 function linkDotfile {

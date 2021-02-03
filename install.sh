@@ -15,10 +15,9 @@ function install {
     echo "Installing: ${1}..."
     sudo apt install -y $1
   else
-    echo "Already installed: ${1}"
+    echo "Already Installed: ${1}"
   fi
 }
-
 
 # main things
 install vim 
@@ -28,11 +27,9 @@ install nmap
 install curl
 install git
 
-
 # extra things
 install figlet
 install lolcat
-
 
 
 
@@ -64,6 +61,7 @@ function linkDotfile {
 }
 
 
+# acutual symlinks
 linkDotfile .vimrc
 linkDotfile .tmux.conf
 

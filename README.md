@@ -1,15 +1,15 @@
 # dotfiles
 
-These are my linux dotfiles.
+These are my linux dotfiles, for debian based systems.
 
 ### How to install:
 1. Clone the repository.
 2. Run the `install.sh` script...easy.
 
-
 ### What get installed?
-* Symbolic link for `.vimrc`
-* Symbolic link for `.tmux.conf`
+* Regular System updates
+* Symbolic link to `.vimrc`
+* Symbolic link to `.tmux.conf`
 * Vim
 * Htop
 * Tmux

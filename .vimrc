@@ -21,4 +21,4 @@ set smartindent
 
 set ignorecase
 
-
+set paste

@@ -26,6 +26,7 @@ install tmux
 install nmap
 install curl
 install git
+install neofetch
 
 # extra things
 install figlet

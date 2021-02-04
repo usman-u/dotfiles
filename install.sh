@@ -65,7 +65,7 @@ function linkDotfile {
 # acutual symlinks
 linkDotfile .vimrc
 linkDotfile .tmux.conf
+linkDotfile .bashrc
 
 
-
-figlet "... updated stuff:-)" | lolcat
+figlet "... Done" | lolcat

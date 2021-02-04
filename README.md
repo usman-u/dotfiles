@@ -1,6 +1,6 @@
 # dotfiles
 
-These are my linux dotfiles, for debian based systems.
+These are my linux dotfiles, for linux systems.
 
 ### How to install:
 1. Clone the repository.

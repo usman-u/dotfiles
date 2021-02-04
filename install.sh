@@ -68,4 +68,8 @@ linkDotfile .tmux.conf
 linkDotfile .bashrc
 
 
+source ~/.bashrc
+
 figlet "... Done" | lolcat
+
+

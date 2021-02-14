@@ -19,5 +19,6 @@ These are my linux dotfiles, for linux systems.
 * Curl
 * Git
 * Neofetch
+* Wavemon
 * Finglet
 * Lolcat

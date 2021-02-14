@@ -10,7 +10,7 @@ These are my linux dotfiles, for linux systems.
 * Regular System updates
 * Symbolic link to `.vimrc`
 * Symbolic link to `.tmux.conf`
-* Bash alias of `ls -al` to `ls`
+* Bash alias of `ls -alhrS` to `ls` 
 * Ookla CLI Speedtest
 * Vim
 * Htop

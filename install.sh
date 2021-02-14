@@ -2,11 +2,6 @@
 
 echo "Installing Updates n Stuff..."
 
-
-# main update
-sudo apt update 
-sudo apt upgrade -y --allow-downgrades
-
 # subroutine for installing
 function install {
   which $1 &> /dev/null
@@ -27,6 +22,7 @@ install nmap
 install curl
 install git
 install neofetch
+install wavemon
 
 # extra things
 install figlet
@@ -42,13 +38,6 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys $INSTALL_KEY
 echo "deb https://ookla.bintray.com/debian generic main" | sudo tee  /etc/apt/sources.list.d/speedtest.list
 sudo apt-get update
 install speedtest
-
-
-
-
-
-
-
 
 # subroutine for symlinks
 dotfilesDir=$(pwd)
@@ -78,13 +67,10 @@ function linkDotfile {
 }
 
 
-# acutual symlinks
+# symlinks called using subroutines
 linkDotfile .vimrc
 linkDotfile .tmux.conf
 linkDotfile .bashrc
-
-
-source ~/.bashrc
 
 figlet "... Done" | lolcat
 

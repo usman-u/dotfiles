@@ -1,8 +1,12 @@
 #!/bin/bash
 
-echo "Installing Updates n Stuff..."
 
-# subroutine for installing
+echo "Downloading all required files"
+
+git clone https://github.com/usman-u/dotfiles   # Downloads Files
+
+### MAIN SUBROUTINES ###
+# Install Subroutine
 function install {
   which $1 &> /dev/null
 
@@ -14,32 +18,7 @@ function install {
   fi
 }
 
-# main things
-install vim 
-install htop
-install tmux
-install nmap
-install curl
-install git
-install neofetch
-install wavemon
-
-# extra things
-install figlet
-install lolcat
-
-
-# Ookla Speed Test CLI
-install gnupg1 
-install apt-transport-https 
-install dirmngr
-export INSTALL_KEY=379CE192D401AB61
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys $INSTALL_KEY
-echo "deb https://ookla.bintray.com/debian generic main" | sudo tee  /etc/apt/sources.list.d/speedtest.list
-sudo apt-get update
-install speedtest
-
-# subroutine for symlinks
+# Symlinks Subroutine
 dotfilesDir=$(pwd)
 
 function linkDotfile {
@@ -65,6 +44,35 @@ function linkDotfile {
   echo "Creating new symlink: ${dest}"
   ln -s ${dotfilesDir}/${1} ${dest}
 }
+### END OF SUBROUTINES ###
+
+
+echo "Installing Updates n Stuff..."
+# main things
+install vim 
+install htop
+install tmux
+install nmap
+install curl
+install git
+install neofetch
+install wavemon
+
+# extra things
+install figlet
+install lolcat
+
+
+# Ookla Speed Test CLI
+install gnupg1 
+install apt-transport-https 
+install dirmngr
+export INSTALL_KEY=379CE192D401AB61
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys $INSTALL_KEY
+echo "deb https://ookla.bintray.com/debian generic main" | sudo tee  /etc/apt/sources.list.d/speedtest.list
+sudo apt-get update
+install speedtest
+
 
 
 # symlinks called using subroutines
@@ -73,5 +81,3 @@ linkDotfile .tmux.conf
 linkDotfile .bashrc
 
 figlet "... Done" | lolcat
-
-

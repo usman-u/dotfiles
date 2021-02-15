@@ -48,7 +48,7 @@ function linkDotfile {
 
 
 echo "Installing Updates n Stuff..."
-# main things
+# Applications
 install vim 
 install htop
 install tmux
@@ -57,11 +57,7 @@ install curl
 install git
 install neofetch
 install wavemon
-
-# extra things
-install figlet
-install lolcat
-
+install cowsay
 
 # Ookla Speed Test CLI
 install gnupg1 
@@ -80,4 +76,5 @@ linkDotfile .vimrc
 linkDotfile .tmux.conf
 linkDotfile .bashrc
 
-figlet "... Done" | lolcat
+
+cowsay ALLDONE

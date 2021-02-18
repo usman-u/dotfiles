@@ -55,7 +55,7 @@ install wavemon
 install cowsay
 install zsh
 
-# Ookla Speed Test CLI
+# Ookla speed test
 install gnupg1 
 install apt-transport-https 
 install dirmngr
@@ -67,10 +67,13 @@ install speedtest
 
 
 
+
 # symlinks called using subroutines
 linkDotfile .vimrc
 linkDotfile .tmux.conf
 linkDotfile .zshrc
 
 
-mkdir ~/.cache/zsh/
+mkdir ~/.cache/zsh/  # creates cache dir for zsh
+
+sudo usermod -s /usr/bin/zsh $(whoami)

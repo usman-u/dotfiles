@@ -1,10 +1,5 @@
 #!/bin/bash
 
-
-echo "Downloading all required files"
-
-git clone https://github.com/usman-u/dotfiles   # Downloads Files
-
 ### MAIN SUBROUTINES ###
 # Install Subroutine
 function install {
@@ -58,6 +53,7 @@ install git
 install neofetch
 install wavemon
 install cowsay
+install zsh
 
 # Ookla Speed Test CLI
 install gnupg1 
@@ -74,7 +70,6 @@ install speedtest
 # symlinks called using subroutines
 linkDotfile .vimrc
 linkDotfile .tmux.conf
-linkDotfile .bashrc
-
+linkDotfile .zshrc
 
 cowsay ALLDONE

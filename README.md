@@ -20,5 +20,3 @@ These are my linux dotfiles, for linux systems.
 * Git
 * Neofetch
 * Wavemon
-* Finglet
-* Lolcat

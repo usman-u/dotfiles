@@ -72,4 +72,5 @@ linkDotfile .vimrc
 linkDotfile .tmux.conf
 linkDotfile .zshrc
 
-cowsay ALLDONE
+
+mkdir ~/.cache/zsh/

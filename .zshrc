@@ -43,3 +43,16 @@ zle-line-init() {
 zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+
+# Aliases
+
+alias gc="git commit"
+alias gch="git checkout"
+alias gs="git status"
+alias ga="git add"
+alias gb="git branch"
+
+# Edit line in vim buffer with ctrl-e:
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^e' edit-command-line
+

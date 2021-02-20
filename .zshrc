@@ -1,13 +1,11 @@
-# Created by newuser for 5.8
-
 # Enable colors and change prompt:
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
 # History in cache directory:
-HISTSIZE=10000
-SAVEHIST=10000
-HISTFILE=~/.cache/zsh/history
+HISTSIZE=100000000000
+SAVEHIST=100000000000	
+HISTFILE=~/history
 
 
 # Basic auto/tab complete:
@@ -55,4 +53,3 @@ alias gb="git branch"
 # Edit line in vim buffer with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
-

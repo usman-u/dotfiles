@@ -3,12 +3,9 @@ set wrap
 
 " makes tabs 4 spaces
 set tabstop=4 softtabstop=4
-
 set shiftwidth=4
 
-
-
-set scrolloff=8
+set scrolloff=9
 
 " shows line numbers
 set number

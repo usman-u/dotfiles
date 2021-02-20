@@ -74,7 +74,4 @@ linkDotfile .vimrc
 linkDotfile .tmux.conf
 linkDotfile .zshrc
 
-
-mkdir ~/.cache/zsh/  # creates cache dir for zsh
-
 sudo usermod -s /usr/bin/zsh $(whoami)  # sets the default terminal to zsh

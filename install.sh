@@ -54,6 +54,7 @@ install neofetch
 install wavemon
 install cowsay
 install zsh
+install tldr
 
 # Ookla speed test
 install gnupg1 

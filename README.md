@@ -12,6 +12,7 @@ These are my linux dotfiles, for linux systems.
 * Symbolic link to `.vimrc`
 * Symbolic link to `.tmux.conf`
 * zsh shell with `.zshrc`
+* zsh `fast-syntax-highlighting` plugin
 * Ookla CLI Speedtest
 * Vim
 * Htop

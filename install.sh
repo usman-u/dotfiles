@@ -76,4 +76,6 @@ linkDotfile .zshrc
 sudo mkdir ~/.config/nvim/                   # creates nvim dir
 sudo ln -s ~/.vimrc ~/.config/nvim/init.vim  #synlinks vimrc to neovim
 
+sudo cp sources/fast-syntax-highlighting/ /usr/share/zsh/plugins/fast-syntax-highlighting/ -r
+
 sudo usermod -s /usr/bin/zsh $(whoami)  # sets the default terminal to zsh

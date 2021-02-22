@@ -57,4 +57,6 @@ alias vi="nvim"
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
-source ~/dotfiles/sources/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+dir=$(pwd)
+
+source $dir/dotfiles/sources/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh

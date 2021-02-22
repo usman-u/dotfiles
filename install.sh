@@ -74,4 +74,6 @@ linkDotfile .vimrc
 linkDotfile .tmux.conf
 linkDotfile .zshrc
 
+echo "maptimeout 0" >> ~/.screenrc   # speeds vim up
+
 sudo usermod -s /usr/bin/zsh $(whoami)  # sets the default terminal to zsh

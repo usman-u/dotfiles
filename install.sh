@@ -45,6 +45,7 @@ function linkDotfile {
 echo "Installing Updates n Stuff..."
 # Applications
 install vim 
+install neovim 
 install htop
 install tmux
 install nmap
@@ -66,14 +67,12 @@ echo "deb https://ookla.bintray.com/debian generic main" | sudo tee  /etc/apt/so
 sudo apt-get update
 install speedtest
 
-
-
-
 # symlinks called using subroutines
 linkDotfile .vimrc
 linkDotfile .tmux.conf
 linkDotfile .zshrc
 
-echo "maptimeout 0" >> ~/.screenrc   # speeds vim up
+## neovim configs
+ln -s ~/.vimrc ~/.config/nvim/init.vim  #synlinks vimrc to neovim
 
 sudo usermod -s /usr/bin/zsh $(whoami)  # sets the default terminal to zsh

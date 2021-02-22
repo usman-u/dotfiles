@@ -13,8 +13,9 @@ These are my linux dotfiles, for linux systems.
 * Symbolic link to `.tmux.conf`
 * zsh shell with `.zshrc`
 * zsh `fast-syntax-highlighting` plugin
+* Alias of `vim` & `vi` to `nvim`
 * Ookla CLI Speedtest
-* Vim
+* Vim & Neovim 
 * Htop
 * Tmux
 * Nmap

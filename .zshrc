@@ -49,6 +49,9 @@ alias gch="git checkout"
 alias gs="git status"
 alias ga="git add"
 alias gb="git branch"
+alias vim="nvim"
+alias vi="nvim"
+
 
 # Edit line in vim buffer with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line

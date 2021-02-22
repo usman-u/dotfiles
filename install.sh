@@ -73,6 +73,7 @@ linkDotfile .tmux.conf
 linkDotfile .zshrc
 
 ## neovim configs
-ln -s ~/.vimrc ~/.config/nvim/init.vim  #synlinks vimrc to neovim
+sudo mkdir ~/.config/nvim/                   # creates nvim dir
+sudo ln -s ~/.vimrc ~/.config/nvim/init.vim  #synlinks vimrc to neovim
 
 sudo usermod -s /usr/bin/zsh $(whoami)  # sets the default terminal to zsh

@@ -19,3 +19,5 @@ set smartindent
 set ignorecase
 
 set paste
+
+set clipboard=unnamedplus

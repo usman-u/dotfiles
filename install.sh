@@ -59,16 +59,6 @@ install tldr
 install python3
 install python3-pip
 
-# Ookla speed test
-install gnupg1 
-install apt-transport-https 
-install dirmngr
-export INSTALL_KEY=379CE192D401AB61
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys $INSTALL_KEY
-echo "deb https://ookla.bintray.com/debian generic main" | sudo tee  /etc/apt/sources.list.d/speedtest.list
-sudo apt-get update
-install speedtest
-
 # symlinks called using subroutines
 linkDotfile .vimrc
 linkDotfile .tmux.conf

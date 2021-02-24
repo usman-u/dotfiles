@@ -15,11 +15,9 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
-# vim mode
+# vim mode in zsh
 bindkey -v
 export KEYTIMEOUT=1
-
-
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
@@ -49,7 +47,6 @@ alias gch="git checkout"
 alias gs="git status"
 alias ga="git add"
 alias gb="git branch"
-alias sudo vim="nvim"
 alias vim="nvim"
 
 
@@ -60,4 +57,4 @@ bindkey '^e' edit-command-line
 export EDITOR='nvim'
 export VISUAL='nvim'
 
-source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ### MAIN SUBROUTINES ###
+
 # Install Subroutine
 function install {
   which $1 &> /dev/null
@@ -13,7 +14,7 @@ function install {
   fi
 }
 
-# Symlinks Subroutine
+# Symbolic links Subroutine
 dotfilesDir=$(pwd)
 
 function linkDotfile {
@@ -43,7 +44,7 @@ function linkDotfile {
 
 
 echo "Installing Updates n Stuff..."
-# Applications
+# Main Applications
 install vim 
 install neovim 
 install htop
@@ -52,12 +53,11 @@ install nmap
 install curl
 install git
 install neofetch
-install wavemon
-install cowsay
 install zsh
 install tldr
 install python3
 install python3-pip
+install zsh-sytax-highlighting
 
 # symlinks called using subroutines
 linkDotfile .vimrc
@@ -68,9 +68,5 @@ linkDotfile .zshrc
 sudo mkdir ~/.config/                        # creates nvim .config
 sudo mkdir ~/.config/nvim/                   # creates nvim dir
 sudo ln -s ~/.vimrc ~/.config/nvim/init.vim  # symlinks vimrc to neovim
-
-sudo mkdir /usr/share/zsh/plugins/
-sudo mkdir /usr/share/zsh/plugins/fast-syntax-highlighting/
-sudo cp sources/fast-syntax-highlighting/ /usr/share/zsh/plugins/ -r
 
 sudo usermod -s /usr/bin/zsh $(whoami)  # sets the default terminal to zsh

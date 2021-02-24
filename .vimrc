@@ -17,6 +17,7 @@ se mouse+=a
 set smartindent
 
 set ignorecase
+set smartcase
 
 set paste
 

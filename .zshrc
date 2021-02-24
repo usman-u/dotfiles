@@ -57,4 +57,7 @@ alias vi="nvim"
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
+export EDITOR='nvim'
+export VISUAL='nvim'
+
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh

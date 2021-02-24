@@ -49,8 +49,8 @@ alias gch="git checkout"
 alias gs="git status"
 alias ga="git add"
 alias gb="git branch"
+alias sudo vim="nvim"
 alias vim="nvim"
-alias vi="nvim"
 
 
 # Edit line in vim buffer with ctrl-e:

@@ -3,9 +3,10 @@
 These are my linux dotfiles, for linux systems.
 
 ### How to install:
-1. Clone the repository. `git clone https://github.com/usman-u/dotfiles`
-2. Make the script executable `chmod +x install.sh`.
-3. Run the `./install.sh` script.
+1. Clone the repository to your home dir. `git clone https://github.com/usman-u/dotfiles`
+2. Navigate to the directory `cd dotfiles`
+3. Make the script executable `chmod +x install.sh`.
+4. Run the `./install.sh` script.
 
 ### What get installed?
 * Regular System updates

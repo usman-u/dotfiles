@@ -56,6 +56,8 @@ install wavemon
 install cowsay
 install zsh
 install tldr
+install python3
+install python3-pip
 
 # Ookla speed test
 install gnupg1 
@@ -73,8 +75,9 @@ linkDotfile .tmux.conf
 linkDotfile .zshrc
 
 ## neovim configs
+sudo mkdir ~/.config/                        # creates nvim .config
 sudo mkdir ~/.config/nvim/                   # creates nvim dir
-sudo ln -s ~/.vimrc ~/.config/nvim/init.vim  #synlinks vimrc to neovim
+sudo ln -s ~/.vimrc ~/.config/nvim/init.vim  # symlinks vimrc to neovim
 
 sudo mkdir /usr/share/zsh/plugins/
 sudo mkdir /usr/share/zsh/plugins/fast-syntax-highlighting/

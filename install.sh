@@ -57,7 +57,7 @@ install zsh
 install tldr
 install python3
 install python3-pip
-install zsh-sytax-highlighting
+install zsh-syntax-highlighting
 
 # symlinks called using subroutines
 linkDotfile .vimrc

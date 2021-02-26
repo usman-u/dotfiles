@@ -69,4 +69,8 @@ sudo mkdir ~/.config/                        # creates nvim .config
 sudo mkdir ~/.config/nvim/                   # creates nvim dir
 sudo ln -s ~/.vimrc ~/.config/nvim/init.vim  # symlinks vimrc to neovim
 
+# installs vim-plug
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
 sudo usermod -s /usr/bin/zsh $(whoami)  # sets the default terminal to zsh

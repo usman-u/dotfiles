@@ -24,5 +24,4 @@ set paste
 set clipboard=unnamedplus
 
 call plug#begin('~/dotfiles/plugins/vim_plugins')
-Plug 'valloric/youcompleteme'
 call plug#end()

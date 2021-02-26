@@ -23,5 +23,9 @@ set paste
 
 set clipboard=unnamedplus
 
+
 call plug#begin('~/dotfiles/plugins/vim_plugins')
+Plug 'rafi/awesome-vim-colorschemes'
 call plug#end()
+
+colorscheme gruvbox

@@ -24,7 +24,7 @@ set paste
 set clipboard=unnamedplus
 
 
-call plug#begin('~/dotfiles/plugins/vim_plugins')
+call plug#begin('~/dotfiles/sources/')
 Plug 'rafi/awesome-vim-colorschemes'
 call plug#end()
 

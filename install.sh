@@ -44,7 +44,7 @@ function linkDotfile {
 
 
 echo "Installing Updates n Stuff..."
-# Main Applications
+# main programs installed via subroutine call
 install vim 
 install neovim 
 install htop
@@ -69,7 +69,7 @@ sudo mkdir ~/.config/                        # creates nvim .config
 sudo mkdir ~/.config/nvim/                   # creates nvim dir
 sudo ln -s ~/.vimrc ~/.config/nvim/init.vim  # symlinks vimrc to neovim
 
-# installs vim-plug
+# installs vim-plug manager
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 

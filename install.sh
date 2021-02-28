@@ -45,6 +45,7 @@ function linkDotfile {
 
 echo "Installing Updates n Stuff..."
 # main programs installed via subroutine call
+install net-tools
 install vim 
 install neovim 
 install htop

@@ -74,4 +74,7 @@ sudo ln -s ~/.vimrc ~/.config/nvim/init.vim  # symlinks vimrc to neovim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
+sudo mkdir /usr/share/plugins/
+sudo cp -r sources/awesome-vim-colorschemes/ /usr/share/plugins/
+
 sudo usermod -s /usr/bin/zsh $(whoami)  # sets the default terminal to zsh

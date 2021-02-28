@@ -6,7 +6,8 @@ These are my linux dotfiles, for linux systems.
 1. Clone the repository to your home dir. `git clone https://github.com/usman-u/dotfiles`
 2. Navigate to the directory `cd dotfiles`
 3. Make the script executable `chmod +x install.sh`.
-4. Run the `./install.sh` script.
+4. Run the script.`./install.sh` 
+5. Relogin user.
 
 ### What get installed?
 * Regular System updates
@@ -23,4 +24,3 @@ These are my linux dotfiles, for linux systems.
 * Curl
 * Git
 * Neofetch
-* Wavemon

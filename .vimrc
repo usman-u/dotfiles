@@ -1,5 +1,5 @@
 " wraps lines
-set wrap
+set wrap linebreak
 
 " makes tabs 4 spaces
 set tabstop=4 softtabstop=4

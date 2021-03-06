@@ -42,6 +42,7 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 # Aliases
 
+alias sudo='nocorrect sudo -E '
 alias gc="git commit"
 alias gch="git checkout"
 alias gs="git status"

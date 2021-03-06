@@ -8,7 +8,7 @@ function install {
 
   if [ $? -ne 0 ]; then
     echo "Installing: ${1}..."
-    sudo apt install -y $1
+    sudo apt install -y $1 >/dev/null 2>&1
   else
     echo "Already Installed: ${1}"
   fi

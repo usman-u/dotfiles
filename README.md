@@ -1,7 +1,5 @@
 # dotfiles
 
-These are my linux dotfiles, for linux systems.
-
 ### How to install:
 1. Clone the repository to your home dir. `git clone https://github.com/usman-u/dotfiles`
 2. Navigate to the directory `cd dotfiles`

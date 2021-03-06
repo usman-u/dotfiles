@@ -51,6 +51,7 @@ alias gb="git branch"
 alias gp="git push"
 alias gf="git fetch"
 alias gd="git diff"
+alias gl="git log"
 alias vim="nvim"
 
 # Edit line in vim buffer with ctrl-e:

@@ -43,7 +43,16 @@ function linkDotfile {
 ### END OF SUBROUTINES ###
 
 
-echo "Installing Updates n Stuff..."
+echo "Running 'apt update'"
+sudo apt update >/dev/null 2>&1
+
+printf "\nRunning 'apt upgrade'\n"
+sudo apt upgrade -y >/dev/null 2>&1
+
+
+
+
+
 # main programs installed via subroutine call
 install net-tools
 install vim 
@@ -55,12 +64,13 @@ install curl
 install git
 install neofetch
 install zsh
+install zsh-syntax-highlighting
 install tldr
 install python3
 install python3-pip
-install zsh-syntax-highlighting
 
 # symlinks called using subroutines
+printf "\n"
 linkDotfile .vimrc
 linkDotfile .tmux.conf
 linkDotfile .zshrc
@@ -71,10 +81,15 @@ sudo mkdir ~/.config/nvim/ >/dev/null 2>&1                   # creates nvim dir
 sudo ln -s ~/.vimrc ~/.config/nvim/init.vim >/dev/null 2>&1  # symlinks vimrc to neovim
 
 # installs vim-plug manager
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+printf "\nInstalling Vim Plugin Manager"
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs  \
+	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim >/dev/null 2>&1'
 
 sudo mkdir /usr/share/plugins/ >/dev/null 2>&1
+echo "Copying 'awesome-vim-colorschemes/' to /usr/share/plugins"
 sudo cp -r sources/awesome-vim-colorschemes/ /usr/share/plugins/ >/dev/null 2>&1
 
+echo "Setting default terminal to zsh"
 sudo usermod -s /usr/bin/zsh $(whoami)  >/dev/null 2>&1 # sets the default terminal to zsh
+
+printf "\nRerun script as sudo if you want the root user to have the same modifications"

@@ -53,6 +53,9 @@ alias gf="git fetch"
 alias gd="git diff"
 alias gl="git log"
 alias vim="nvim"
+alias getip="curl ipinfo.io/ip"
+alias yta="youtube-dl -xf bestaudio/best"
+alias ytv="youtube-dl -xf bestvideo/best"
 
 # Edit line in vim buffer with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line

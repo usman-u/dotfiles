@@ -19,7 +19,6 @@ dotfilesDir=$(pwd)
 
 function linkDotfile {
   dest="${HOME}/${1}"
-  dateStr=$(date +%Y-%m-%d-%H%M)
 
   if [ -h ~/${1} ]; then
     # Existing symlink 
@@ -49,10 +48,6 @@ sudo apt update >/dev/null 2>&1
 printf "\nRunning 'apt upgrade'\n"
 sudo apt upgrade -y >/dev/null 2>&1
 
-
-
-
-
 # main programs installed via subroutine call
 install net-tools
 install vim 
@@ -68,12 +63,18 @@ install zsh-syntax-highlighting
 install tldr
 install python3
 install python3-pip
+install konsole
 
 # symlinks called using subroutines
 printf "\n"
 linkDotfile .vimrc
 linkDotfile .tmux.conf
 linkDotfile .zshrc
+
+# symlinks for Konsole Terminal
+ln -s ~/dotfiles/Konsole/konsolerc ~/.config/konsolerc
+ln -s ~/dotfiles/Konsole/Gruvbox.colorscheme ~/.local/share/konsole/Gruvbox.colorscheme 
+ln -s ~/dotfiles/Konsole/Profile\ 1.profile ~/.local/share/konsole/Profile\ 1.profile
 
 ## neovim configs
 sudo mkdir ~/.config/ >/dev/null 2>&1                        # creates nvim .config  

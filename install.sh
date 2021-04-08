@@ -63,18 +63,12 @@ install zsh-syntax-highlighting
 install tldr
 install python3
 install python3-pip
-install konsole
 
 # symlinks called using subroutines
 printf "\n"
 linkDotfile .vimrc
 linkDotfile .tmux.conf
 linkDotfile .zshrc
-
-# symlinks for Konsole Terminal
-ln -s ~/dotfiles/Konsole/konsolerc ~/.config/konsolerc
-ln -s ~/dotfiles/Konsole/Gruvbox.colorscheme ~/.local/share/konsole/Gruvbox.colorscheme 
-ln -s ~/dotfiles/Konsole/Profile\ 1.profile ~/.local/share/konsole/Profile\ 1.profile
 
 ## neovim configs
 sudo mkdir ~/.config/ >/dev/null 2>&1                        # creates nvim .config  

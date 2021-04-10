@@ -84,6 +84,8 @@ sudo mkdir /usr/share/plugins/ >/dev/null 2>&1
 echo "Copying 'awesome-vim-colorschemes/' to /usr/share/plugins"
 sudo cp -r sources/awesome-vim-colorschemes/ /usr/share/plugins/ >/dev/null 2>&1
 
+sudo cp -r sources/zsh-autosuggestions/ /usr/share/plugins >/dev/null 2>&1
+
 echo "Setting default terminal to zsh"
 sudo usermod -s /usr/bin/zsh $(whoami)  >/dev/null 2>&1 # sets the default terminal to zsh
 

@@ -65,4 +65,3 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh

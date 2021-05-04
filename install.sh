@@ -8,7 +8,7 @@ function install {
 
   if [ $? -ne 0 ]; then
     echo "Installing: ${1}..."
-    sudo apt install -y $1 >/dev/null 2>&1
+    sudo apt install -y $1 
   else
     echo "Already Installed: ${1}"
   fi
@@ -43,10 +43,10 @@ function linkDotfile {
 
 
 echo "Running 'apt update'"
-sudo apt update >/dev/null 2>&1
+sudo apt update
 
 printf "\nRunning 'apt upgrade'\n"
-sudo apt upgrade -y >/dev/null 2>&1
+sudo apt upgrade -y
 
 # main programs installed via subroutine call
 install net-tools
@@ -69,6 +69,7 @@ printf "\n"
 linkDotfile .vimrc
 linkDotfile .tmux.conf
 linkDotfile .zshrc
+linkDotfile .alacritty.yml
 
 ## neovim configs
 sudo mkdir ~/.config/ >/dev/null 2>&1                        # creates nvim .config  
@@ -83,8 +84,6 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 sudo mkdir /usr/share/plugins/ >/dev/null 2>&1
 echo "Copying 'awesome-vim-colorschemes/' to /usr/share/plugins"
 sudo cp -r sources/awesome-vim-colorschemes/ /usr/share/plugins/ >/dev/null 2>&1
-
-sudo cp -r sources/zsh-autosuggestions/ /usr/share/plugins >/dev/null 2>&1
 
 echo "Setting default terminal to zsh"
 sudo usermod -s /usr/bin/zsh $(whoami)  >/dev/null 2>&1 # sets the default terminal to zsh

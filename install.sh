@@ -41,7 +41,6 @@ function linkDotfile {
 }
 ### END OF SUBROUTINES ###
 
-
 echo "Running 'apt update'"
 sudo apt update
 
@@ -69,7 +68,6 @@ printf "\n"
 linkDotfile .vimrc
 linkDotfile .tmux.conf
 linkDotfile .zshrc
-linkDotfile .alacritty.yml
 
 ## neovim configs
 sudo mkdir ~/.config/ >/dev/null 2>&1                        # creates nvim .config  

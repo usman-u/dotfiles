@@ -5,18 +5,16 @@
 2. Navigate to the directory `cd dotfiles`
 3. Make the script executable `chmod +x install.sh`.
 4. Run the script.`./install.sh` 
-5. Relogin user.
+5. Relogin user (or new zsh session)
 
 ### What get installed?
 * Regular System updates
-* Symbolic link to `.vimrc`
-* Symbolic link to `.tmux.conf`
+* Symbolic link to dotfiles
 * zsh shell with `.zshrc`
 * zsh `fast-syntax-highlighting` plugin
-* Vim & Neovim 
-* vim-plugin manager
-* Alias of `vim` & `vi` to `nvim`
+* Neovim 
 * Htop
+* iftop
 * Tmux
 * Nmap
 * Curl

@@ -75,11 +75,6 @@ sudo mkdir ~/.config/ >/dev/null 2>&1                        # creates nvim .con
 sudo mkdir ~/.config/nvim/ >/dev/null 2>&1                   # creates nvim dir
 sudo ln -s ~/.vimrc ~/.config/nvim/init.vim >/dev/null 2>&1  # symlinks vimrc to neovim
 
-# installs vim-plug manager
-printf "\nInstalling Vim Plugin Manager"
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs  \
-	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim >/dev/null 2>&1'
-
 sudo mkdir /usr/share/plugins/ >/dev/null 2>&1
 echo "Copying 'awesome-vim-colorschemes/' to /usr/share/plugins"
 sudo cp -r sources/awesome-vim-colorschemes/ /usr/share/plugins/ >/dev/null 2>&1

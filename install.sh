@@ -62,6 +62,7 @@ install zsh-syntax-highlighting
 install tldr
 install python3
 install python3-pip
+install iftop
 
 # symlinks called using subroutines
 printf "\n"

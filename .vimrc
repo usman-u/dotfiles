@@ -13,3 +13,4 @@ set ignorecase
 set smartcase
 set paste
 set clipboard=unnamedplus
+map Q <Nop>

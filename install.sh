@@ -57,8 +57,6 @@ install nmap
 install curl
 install git
 install neofetch
-install zsh
-install zsh-syntax-highlighting
 install tldr
 install python3
 install python3-pip
@@ -82,4 +80,4 @@ sudo cp -r sources/awesome-vim-colorschemes/ /usr/share/plugins/ >/dev/null 2>&1
 echo "Setting default terminal to zsh"
 sudo usermod -s /usr/bin/zsh $(whoami)  >/dev/null 2>&1 # sets the default terminal to zsh
 
-printf "\nRerun script as sudo if you want the root user to have the same modifications"
+printf "\nRerun script as sudo if you want the root user to have the same modifications\n"

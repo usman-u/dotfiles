@@ -67,6 +67,8 @@ printf "\n"
 linkDotfile .vimrc
 linkDotfile .tmux.conf
 linkDotfile .zshrc
+linkDotfile .bashrc
+linkDotfile .tmux.conf
 
 ## neovim configs
 sudo mkdir ~/.config/ >/dev/null 2>&1                        # creates nvim .config  
